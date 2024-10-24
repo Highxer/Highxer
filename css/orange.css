@@ -1,0 +1,16 @@
+#logo{
+    background: #ec6a0a;
+}
+
+#menu ul li :hover{
+    background: #ec6a0a;
+}
+
+.button-more{
+    background: #ec6a0a;
+}
+
+body{
+    background: url(../img/bosque1.jpg);
+    background-attachment: fixed;
+}

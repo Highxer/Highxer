@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Proyecto JavaScript</title>
+        <!--Estilos CSS-->
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link id="theme" rel="stylesheet" type="text/css" href="css/orange.css" />
+
+        <!--JQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="js/jquery-ui-1.14.0/jquery-ui.min.css">
+        <link rel="stylesheet" href="js/jquery-ui-1.14.0/jquery-ui.structure.min.css">
+        <link rel="stylesheet" href="js/jquery-ui-1.14.0/jquery-ui.theme.min.css">
+
+        <script type="text/javascript" src="js/jquery-ui-1.14.0/jquery-ui.min.js"></script>
+
+        <!--Plugin Validacion-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+
+
+        <!--Mis scripts-->
+        <script type="text/JavaScript" src="js/main.js"></script>
+        <script type="text/JavaScript" src="js/validacion.js"></script>
+        <script type="text/JavaScript" src="js/themes.js"></script>
+
+      
+    </head>
+    <body>
+
+        <div id="selector-theme">
+            <div id="to-orange"></div>
+            <div id="to-red"></div>
+            <div id="to-blue"></div>
+        </div>
+        <section id="global">
+            <!--Encabezado-->
+            <header>
+                <div id="logo">
+                    <h1>Proyecto JS</h1>
+                </div>
+                
+                <div class="clearfix"></div>
+
+                <nav id="menu">
+                    <ul>
+                        <li><a href="index.html">INICIO</a></li>
+                        <li><a href="reloj.html">RELOJ</a></li>
+                        <li><a href="about.html">SOBRE MI</a></li>
+                        <li><a href="contact.html">CONTACTO</a></li>
+                    </ul>
+                </nav>
+            </header>
+       
+            <!--Contenido-->
+            <section id="content">
+                <div id="posts">
+                    <!--Cargar Posts desde Json-->
+                </div>
+                <div id="box">
+                    <!--Cargar formulario-->
+                    <h2>Contacto</h2>
+
+                    <form action="" method="post" id="form_contact">
+                        <label for="name">Nombre</label>
+                        <input type="text" name="name" data-validation="alphanumeric"/>
+
+                        <label for="surname">Apellidos</label>
+                        <input type="text" name="surname" data-validation="alphanumeric"/>
+
+                        <label>Email</label>
+                        <input type="email" name="email" data-validation="email"/>
+                        <br/>
+                        <label>Sexo</label>
+                        <select name="sex" data-validation="required">
+                            <option value="men">Hombre</option>
+                            <option value="women">Mujer</option>
+                            <option value="other">Otro</option>
+                        </select>
+                
+                        <label for="date">Fecha de Nacimiento</label>
+                        <input type="text" name="date" data-validation="date" data-validation-format="dd-mm-yyyy"/>
+                    
+                        <label for="age">Edad</label>
+                        <input type="number" name="age" data-validation="number"/>
+
+                        <input type="submit" value="Enviar" />
+
+                    </form>
+                </div>
+                <aside id="sidebar">
+                    <div id="about">
+                        <h4>Sobre mi</h4>
+                        <img src="img/caracol.jpg">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquam
+                            vestibulum dolor, eu tincidunt velit porta id.
+                        </p>
+
+                    </div>
+                    <div id="login">
+                        <h4><span>Identificate</span></h4>
+                        <form>
+                            <label for="name">
+                                Nombre
+                            </label>
+                            <input type="text" name="name" id="form_name"/>
+
+                            <label for="email">
+                                Correo
+                            </label>
+                            <input type="text" name="email" />
+
+                            <label for="password">
+                                Contraseña
+                            </label>
+                            <input type="password" name="password" />
+
+                            <input type="submit" value="Entrar">
+                        </form>
+                    </div>
+                </aside>
+
+                <div class="clearfix"></div>
+                
+
+            </section>
+
+        </section>
+        <footer>
+            Curso Master de JS
+
+            <a href="#" class="subir">Ir arriba</a>
+        </footer>
+    </body>
+
+</html>
